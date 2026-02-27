@@ -5,20 +5,20 @@
 class Kyper < Formula
   desc "CLI for the Kyper marketplace"
   homepage "https://kyper.shop"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bitfootco/kyper-cli/releases/download/v0.2.0/kyper-cli_darwin_amd64.tar.gz"
-      sha256 "b7e106e310b753b4760099da3b0a82eb92a46fc60195eaafa52ea2095707ecaf"
+      url "https://github.com/bitfootco/kyper-cli/releases/download/v0.2.1/kyper-cli_darwin_amd64.tar.gz"
+      sha256 "dac31f09ff1752f22a73ebcf7a990e035f97a6f9068a3f35d9d48275ab092c7d"
 
       define_method(:install) do
         bin.install "kyper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bitfootco/kyper-cli/releases/download/v0.2.0/kyper-cli_darwin_arm64.tar.gz"
-      sha256 "d0307dd244691b62195c8f62faeb0a62d9905b64e90900629c088747daba296f"
+      url "https://github.com/bitfootco/kyper-cli/releases/download/v0.2.1/kyper-cli_darwin_arm64.tar.gz"
+      sha256 "10550625e017cb89db499439b4cfcc07e5e09d92f78336089e52ee579d344e32"
 
       define_method(:install) do
         bin.install "kyper"
@@ -28,15 +28,15 @@ class Kyper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bitfootco/kyper-cli/releases/download/v0.2.0/kyper-cli_linux_amd64.tar.gz"
-      sha256 "2d9a84b32bdc7c147e82c930002da527cd54d821896fdbeb09012d10f4f6f616"
+      url "https://github.com/bitfootco/kyper-cli/releases/download/v0.2.1/kyper-cli_linux_amd64.tar.gz"
+      sha256 "a95a7fa2ad3f058018e6c3b0f43b0f00d9f85a64fdf3cb54e30863404f8bb05f"
       define_method(:install) do
         bin.install "kyper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bitfootco/kyper-cli/releases/download/v0.2.0/kyper-cli_linux_arm64.tar.gz"
-      sha256 "5fad389a27e447e7f710dcedc86da29052bca3ba3fdacda53a5829f120ab7521"
+      url "https://github.com/bitfootco/kyper-cli/releases/download/v0.2.1/kyper-cli_linux_arm64.tar.gz"
+      sha256 "2105df0a36a056d7c8353c465829f31b5af91651d938780ace2290c6089e8231"
       define_method(:install) do
         bin.install "kyper"
       end
